@@ -15,11 +15,6 @@ export default defineConfig({
   lastUpdated: true,
   lang: "zh-CN",
   head: [
-    [
-      "link",
-      { rel: "icon", type: "image/svg+xml", href: "/teek-logo-mini.svg" },
-    ],
-    ["link", { rel: "icon", type: "image/png", href: "/teek-logo-mini.png" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:locale", content: "zh-CN" }],
     ["meta", { property: "og:title", content: "Teek | VitePress Theme" }],
@@ -72,7 +67,7 @@ export default defineConfig({
   // },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "/teek-logo-mini.svg",
+    logo: "/logo.png",
     darkModeSwitchLabel: "主题",
     sidebarMenuLabel: "菜单",
     returnToTopLabel: "返回顶部",

@@ -33,7 +33,7 @@ export const teekConfig = defineTeekConfig({
     name: "cbofjouの博客", // Banner 标题，默认读取 vitepress 的 title 属性
     bgStyle: "fullImg", // Banner 背景风格：pure 为纯色背景，partImg 为局部图片背景，fullImg 为全屏图片背景
     pureBgColor: "#28282d", // Banner 背景色，bgStyle 为 pure 时生效
-    imgSrc: ["/blog/bg1.webp", "/blog/bg2.webp"], // Banner 图片链接。bgStyle 为 partImg 或 fullImg 时生效
+    imgSrc: ["bannerImg/bg1.jpeg", "bannerImg/bg2.jpg", "bannerImg/bg3.jpeg", "bannerImg/bg4.jpeg", "bannerImg/bg5.jpeg", "bannerImg/bg6.jpeg", "bannerImg/bg7.jpeg", "bannerImg/bg8.jpeg"], // Banner 图片链接。bgStyle 为 partImg 或 fullImg 时生效
     imgInterval: 15000, // 当多张图片时（imgSrc 为数组），设置切换时间，单位：毫秒
     imgShuffle: false, // 图片是否随机切换，为 false 时按顺序切换，bgStyle 为 partImg 或 fullImg 时生效
     imgWaves: false, // 是否开启 Banner 图片波浪纹，bgStyle 为 fullImg 时生效
@@ -44,18 +44,19 @@ export const teekConfig = defineTeekConfig({
   },
   blogger: {
     name: "cbofjou", // 博主昵称
-    slogan: "一只学习code的小白。", // 博主签名
-    avatar: "https://testingcf.jsdelivr.net/gh/Kele-Bingtang/static/user/avatar1.png", // 博主头像
+    slogan: "一只学习code的小白，正在寻找实习中🕛", // 博主签名
+    avatar: "/avatar/avatar.jpg", // 博主头像
     shape: "circle-rotate", // 头像风格：square 为方形头像，circle 为圆形头像，circle-rotate 可支持鼠标悬停旋转，circle-rotate-last 将会持续旋转 59s
     circleBgMask: true, // 遮罩层是否显示，仅当 shape 为 circle 且 circleBgImg 配置时有效
+    circleBgImg: "/avatarBackImg/bg1.webp",
     circleSize: 100, // 头像大小
     color: "#ffffff", // 字体颜色
     // 状态，仅当 shape 为 circle 相关值时有效
-    // status: {
-    //   icon: "😪", // 状态图标
-    //   size: 24, // 图标大小
-    //   title: "困", // 鼠标悬停图标的提示语
-    // },
+    status: {
+      icon: "✊", // 状态图标
+      size: 24, // 图标大小
+      title: "困", // 鼠标悬停图标的提示语
+    },
   },
   homeCardListPosition: "left", // 首页卡片列表位置：left 为左侧，center 为居中，right 为右侧
   topArticle: {
@@ -90,7 +91,7 @@ export const teekConfig = defineTeekConfig({
   },
   social: [
     {
-      icon: `<svg t="1772873515849" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5390" width="256" height="256"><path d="M512 12.64c-282.752 0-512 229.216-512 512 0 226.208 146.72 418.144 350.144 485.824 25.6 4.736 35.008-11.104 35.008-24.64 0-12.192-0.48-52.544-0.704-95.328-142.464 30.976-172.512-60.416-172.512-60.416-23.296-59.168-56.832-74.912-56.832-74.912-46.464-31.776 3.52-31.136 3.52-31.136 51.392 3.616 78.464 52.768 78.464 52.768 45.664 78.272 119.776 55.648 148.992 42.56 4.576-33.088 17.856-55.68 32.512-68.48-113.728-12.928-233.28-56.864-233.28-253.024 0-55.904 20-101.568 52.768-137.44-5.312-12.896-22.848-64.96 4.96-135.488 0 0 43.008-13.76 140.832 52.48 40.832-11.36 84.64-17.024 128.16-17.248 43.488 0.192 87.328 5.888 128.256 17.248 97.728-66.24 140.64-52.48 140.64-52.48 27.872 70.528 10.336 122.592 5.024 135.488 32.832 35.84 52.704 81.536 52.704 137.44 0 196.64-119.776 239.936-233.792 252.64 18.368 15.904 34.72 47.04 34.72 94.816 0 68.512-0.608 123.648-0.608 140.512 0 13.632 9.216 29.6 35.168 24.576 203.328-67.776 349.856-259.616 349.856-485.76 0-282.784-229.248-512-512-512z" fill="#e6e6e6" p-id="5391" data-spm-anchor-id="a313x.search_index.0.i30.350c3a81KT8uI1" class="selected"></path></svg>`,
+      icon: `<svg t="1772873515849" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256"><path d="M512 12.64c-282.752 0-512 229.216-512 512 0 226.208 146.72 418.144 350.144 485.824 25.6 4.736 35.008-11.104 35.008-24.64 0-12.192-0.48-52.544-0.704-95.328-142.464 30.976-172.512-60.416-172.512-60.416-23.296-59.168-56.832-74.912-56.832-74.912-46.464-31.776 3.52-31.136 3.52-31.136 51.392 3.616 78.464 52.768 78.464 52.768 45.664 78.272 119.776 55.648 148.992 42.56 4.576-33.088 17.856-55.68 32.512-68.48-113.728-12.928-233.28-56.864-233.28-253.024 0-55.904 20-101.568 52.768-137.44-5.312-12.896-22.848-64.96 4.96-135.488 0 0 43.008-13.76 140.832 52.48 40.832-11.36 84.64-17.024 128.16-17.248 43.488 0.192 87.328 5.888 128.256 17.248 97.728-66.24 140.64-52.48 140.64-52.48 27.872 70.528 10.336 122.592 5.024 135.488 32.832 35.84 52.704 81.536 52.704 137.44 0 196.64-119.776 239.936-233.792 252.64 18.368 15.904 34.72 47.04 34.72 94.816 0 68.512-0.608 123.648-0.608 140.512 0 13.632 9.216 29.6 35.168 24.576 203.328-67.776 349.856-259.616 349.856-485.76 0-282.784-229.248-512-512-512z" class="selected"></path></svg>`,
       name: "github",
       link: "https://github.com/cbofjou",
     },
