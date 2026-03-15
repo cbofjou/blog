@@ -32,7 +32,7 @@ coverage
 
 docs/01.数据库
 docs/02.Java
-docs/public/blog
-docs/public/bannerImg
-docs/public/avatarBackImg
-docs/public/avatar
+docs/public/blog/*
+docs/public/bannerImg/*
+docs/public/avatarBackImg/*
+docs/public/avatar/*
