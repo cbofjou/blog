@@ -29,3 +29,4 @@ coverage
 *.sw?
 
 /**/.vitepress/cache/*
+docs/01.指南/*

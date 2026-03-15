@@ -1,6 +1,0 @@
-# 让 GitHub 优先识别为 Vue
-*.vue linguist-language=Vue
-*.ts linguist-language=TypeScript
-*.tsx linguist-language=TypeScript
-# 忽略 md 文件，不参与统计
-*.md linguist-vendored
