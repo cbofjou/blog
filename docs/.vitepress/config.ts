@@ -9,7 +9,7 @@ const description = [
 
 export default defineConfig({
   extends: teekConfig,
-  title: "blog",
+  title: "cbofjou",
   description: description,
   cleanUrls: false,
   lastUpdated: true,

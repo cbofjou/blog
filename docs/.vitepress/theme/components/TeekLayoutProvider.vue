@@ -4,7 +4,6 @@ import ContributeChart from "./ContributeChart.vue";
 import NotFound from "./404.vue"; 
 import { TkPageCard } from "vitepress-theme-teek";
 import infoVariable from "../../../globalVariable/infoVariable";
-import { warningFilledIcon } from "vitepress-theme-teek/icons";
 
 </script>
   
