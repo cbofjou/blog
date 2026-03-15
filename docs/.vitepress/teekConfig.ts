@@ -107,7 +107,7 @@ export const teekConfig = defineTeekConfig({
   },
   themeEnhance: {
     layoutSwitch: {
-      defaultMode: "fullWidth"
+      defaultMode: "sidebarWidthAdjustableOnly"
     }
   }
 });
