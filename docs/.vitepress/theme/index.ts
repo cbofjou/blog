@@ -13,7 +13,15 @@ import "vitepress-theme-teek/theme-chalk/tk-blockquote.css"; // > 引用块样�
 import "vitepress-theme-teek/theme-chalk/tk-fade-up-animation.css"; // 首次加载的动画效果
 
 import "./styles/code-bg.scss";
-import "./styles/iframe.scss";
+import "./styles/iframe.scss";  
+import { TkArticleImagePreview, teekConfigContext } from "vitepress-theme-teek";
+import { provide } from "vue";
+
+provide(teekConfigContext, {
+  markdown: {
+
+  }
+})
 
 export default {
   extends: Teek,
